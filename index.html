@@ -1,69 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Project Page</title>
+<html>
 
-  <!-- Optional basic styling -->
+<head>
+  <meta charset="utf-8">
+  <title>Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy Learning</title>
+<!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR3QBE9MVE"></script> -->
+<!-- <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GR3QBE9MVE');
+</script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
   <style>
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background: #fafafa;
-      color: #222;
-      margin: 0;
-      padding: 2rem;
-      line-height: 1.6;
+    @media only screen and (max-width: 850px) {
+      .column.is-three-fifths {
+        width: 85%; /* Adjust the width as per your requirement */
+        margin: auto; /* Center the div */
+      }
     }
-    header {
+    .video-container {
       text-align: center;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid #eee;
-    }
-    h1 {
-      font-size: 2.2rem;
-      margin: 0.5rem 0;
-    }
-    p {
-      max-width: 600px;
-      margin: 1rem auto;
-      text-align: center;
-    }
-    footer {
-      margin-top: 3rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      margin: 20px 0;
     }
   </style>
-</head>
-<body>
-  <header>
-    <h1>🚀 My Project Page</h1>
-    <p>Welcome to my GitHub Pages site for this project!</p>
-  </header>
 
-  <main>
-    <p>
-      This is a simple static website hosted on 
-      <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-      You can customize this <code>index.html</code> to showcase your project.
-    </p>
-    <p>
-      Example link to your project repository:
-      <a href="https://github.com/your-org/your-repo" target="_blank">github.com/your-org/your-repo</a>
-    </p>
-  </main>
+  <section class="hero" >
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">
+              <small>
+                Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy Learning</h1>
+              </small>
+              <div>
+                  <div class="is-size-5 ">
+                    <span class="author-block">
+                      <a href="https://sunghwan.me/" target="_blank">Sunghwan Kim</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="author-block">
+                      <a href="https://mastee7.github.io/" target="_blank">Woojeh Chung</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="author-block">
+                      <a href="https://daizhirui.github.io/" target="_blank">Zhirui Dai</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="author-block">
+                      <a href="https://dwaitbhatt.com/" target="_blank">Dwait Bhatt</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="author-block">
+                      <a href="https://arth.website/" target="_blank">Arth Shukla</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="author-block">
+                      <a href="https://cseweb.ucsd.edu/~haosu/" target="_blank">Hao Su</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="author-block">
+                      <a href="https://www.tianyulun.com/" target="_blank">Yulun Tian</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="author-block">
+                      <a href="https://natanaso.github.io/" target="_blank">Nikolay Atanasov</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+                    </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>UC San Diego</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="author-block"><sup>2</sup>University of Michigan</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+                  <div class="is-size-5 publication-authors" style="font-weight: bold; color: red;">
+                    <span class="author-block">Under Review</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2504.19104"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
+                  <a href="https://youtu.be/PsLH06cp7HA"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-video"></i>
+                    </span>
+                    <span>YouTube</span>
+                  </a>
+                </span> -->
+                <span class="link-block">
+                  <a href="#BibTeX"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-book"></i>
+                    </span>
+                    <span>BibTeX</span>
+                    </a>
+                </span>
+                <span class="link-block">
+                  <a href="#"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (coming soon)</span>
+                  </a>
+                </span>
+            </a>
+          </span>    
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    &copy; 2025 Your Organization. All rights reserved.
-  </footer>
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+        <div class="container">
+          <!-- <p>Relighting results </p> <br> -->
+          <div class="content has-text-justified">
+          <p><strong>Abstract:</strong> In this paper, we demonstrate that mobile manipulation policies utilizing a <em>3D latent map</em> achieve stronger spatial and temporal reasoning than policies relying solely on images. We introduce <em>Seeing the Bigger Picture</em> (SBP), an end-to-end policy learning approach that operates directly on a 3D map of latent features. In SBP, the map extends perception beyond the robot's current field of view and aggregates observations over long horizons. Our mapping approach incrementally fuses multiview observations into a grid of scene-specific latent features. A pre-trained, scene-agnostic decoder reconstructs target embeddings from these features and enables online optimization of the map features during task execution. A policy, trainable with behavior cloning or reinforcement learning, treats the latent map as a state variable and uses global context from the map obtained via a 3D feature aggregator. We evaluate SBP on scene-level mobile manipulation and sequential tabletop manipulation tasks. Our experiments demonstrate that SBP (i) reasons globally over the scene, (ii) leverages the map as long-horizon memory, and (iii) outperforms image-based policies in both in-distribution and novel scenes, e.g., improving the success rate by 15% for the sequential manipulation task.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+        <div class="container">
+          <h2 class="title is-3">Explainer Video</h2>
+          <div class="content has-text-justified">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://youtube.com/embed/PsLH06cp7HA" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+              </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <br>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+        <div class="container">
+          <h2 class="title is-3">Video</h2>
+          <!-- <p>Relighting results </p> <br> -->
+          <div class="content has-text-justified">
+            <div style="position:relative;padding-top:56.25%;">
+              <iframe src="https://www.youtube.com/embed/OOa592xnMTk" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-fifths">
+        <div class="container">
+          <h2 class="title is-3"> Acknowledgements</h2>
+          <div class="content has-text-centered">
+          <p>We gratefully acknowledge support from NSF CCF-2402689 (ExpandAI), ONR N00014-23-1-2353, and the Technology Innovation Program (20018112, Development of autonomous manipulation and gripping technology using imitation learning based on visual and tactile sensing) funded by the Ministry of Trade, Industry & Energy (MOTIE), Korea.</a>. </p> <br>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code> 
+      @inproceedings{tian2025miso,
+        title={{MISO}: Multiresolution Submap Optimization for Efficient Globally Consistent Neural Implicit Reconstruction},
+        author={Tian, Yulun and Cao, Hanwen and Kim, Sunghwan and Atanasov, Nikolay},
+        booktitle={Robotics: Science and Systems (RSS)},
+        year={2025}
+      }
+      </code></pre>
+  </div>
+  </section>
+
+
+
 </body>
 </html>
