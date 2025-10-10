@@ -138,9 +138,105 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths">
         <div class="container">
+          <h2 class="title is-3">Abstract</h2>
           <!-- <p>Relighting results </p> <br> -->
           <div class="content has-text-justified">
-          <p><strong>Abstract:</strong> In this paper, we demonstrate that mobile manipulation policies utilizing a <em>3D latent map</em> achieve stronger spatial and temporal reasoning than policies relying solely on images. We introduce <em>Seeing the Bigger Picture</em> (SBP), an end-to-end policy learning approach that operates directly on a 3D map of latent features. In SBP, the map extends perception beyond the robot's current field of view and aggregates observations over long horizons. Our mapping approach incrementally fuses multiview observations into a grid of scene-specific latent features. A pre-trained, scene-agnostic decoder reconstructs target embeddings from these features and enables online optimization of the map features during task execution. A policy, trainable with behavior cloning or reinforcement learning, treats the latent map as a state variable and uses global context from the map obtained via a 3D feature aggregator. We evaluate SBP on scene-level mobile manipulation and sequential tabletop manipulation tasks. Our experiments demonstrate that SBP (i) reasons globally over the scene, (ii) leverages the map as long-horizon memory, and (iii) outperforms image-based policies in both in-distribution and novel scenes, e.g., improving the success rate by 15% for the sequential manipulation task.</p>
+          <p style="font-size: 1.15em;">In this paper, we demonstrate that mobile manipulation policies utilizing a <em>3D latent map</em> achieve stronger spatial and temporal reasoning than policies relying solely on images. We introduce <em>Seeing the Bigger Picture</em> (SBP), an end-to-end policy learning approach that operates directly on a 3D map of latent features. In SBP, the map extends perception beyond the robot's current field of view and aggregates observations over long horizons. Our mapping approach incrementally fuses multiview observations into a grid of scene-specific latent features. A pre-trained, scene-agnostic decoder reconstructs target embeddings from these features and enables online optimization of the map features during task execution. A policy, trainable with behavior cloning or reinforcement learning, treats the latent map as a state variable and uses global context from the map obtained via a 3D feature aggregator. We evaluate SBP on scene-level mobile manipulation and sequential tabletop manipulation tasks. Our experiments demonstrate that SBP (i) reasons globally over the scene, (ii) leverages the map as long-horizon memory, and (iii) outperforms image-based policies in both in-distribution and novel scenes, e.g., improving the success rate by 15% for the sequential manipulation task.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+        <div class="container">
+          <h2 class="title is-3">3D Latent Map for Manipulation Policy Learning</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/teaser.png" alt="3D Latent Map Teaser" style="width: 100%; max-width: 100%;">
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+        <div class="container">
+          <h2 class="title is-3">Advantage 1: Global visibility of object locations and task goals</h2>
+          <div class="content has-text-centered">
+            <div class="video-container">
+              <video width="100%" controls autoplay loop muted>
+                <source src="./static/images/mobile1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-container">
+              <video width="100%" controls autoplay loop muted>
+                <source src="./static/images/mobile2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+        <div class="container">
+          <h2 class="title is-3">Advantage 2: Enabling Long-horizon reasoning</h2>
+          <div class="content has-text-centered">
+            <div class="video-container">
+              <video width="100%" controls autoplay loop muted>
+                <source src="./static/images/seq1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-container">
+              <video width="100%" controls autoplay loop muted>
+                <source src="./static/images/seq2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+        <div class="container">
+          <h2 class="title is-3">Zero-shot sim-to-real deployment</h2>
+          <div class="content has-text-centered">
+            <div class="video-container">
+              <video width="100%" controls autoplay loop muted>
+                <source src="./static/images/video_fast.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
         </div>
