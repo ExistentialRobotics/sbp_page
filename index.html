@@ -138,8 +138,8 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths-desktop is-four-fifths-tablet">
         <div class="container">
-          <h2 class="title is-4 is-size-5-mobile">3D Latent Map for Manipulation Policy Learning</h2>
-          <p class="content is-medium" style="text-align: center; padding-bottom: 10px;">We leverage 3D maps as spatiotemporal memory for learning manipulation policies.</p>
+          <h2 class="title is-4 is-size-5-mobile">3D Latent Mapping for Manipulation Policy Learning</h2>
+          <p class="content is-medium" style="text-align: center; padding-bottom: 10px;">SBP (Seeing the Bigger Picture) leverages 3D maps as spatiotemporal memory for learning manipulation policies.</p>
           <div class="content has-text-centered">
             <img src="./static/images/teaser.png" alt="3D Latent Map Teaser" style="width: 100%; max-width: 100%;">
           </div>
@@ -215,10 +215,34 @@
           <h2 class="title is-4 is-size-5-mobile">Zero-shot sim-to-real deployment</h2>
           <div class="content has-text-centered">
             <div class="video-container">
-              <video width="70%" controls loop muted>
+              <video class="sim-to-real-video" width="70%" controls loop muted>
                 <source src="./static/images/video_fast.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths-desktop is-four-fifths-tablet">
+        <div class="container">
+          <h2 class="title is-4 is-size-5-mobile">How it works?</h2>
+          <div class="content">
+            <div style="margin-bottom: 2rem;">
+              <p class="content is-medium" style="margin-bottom: 0.75rem; text-align: left;"><strong>Latent Mapping.</strong> We represent the robot's workspace as learnable latent vectors anchored at the vertices of a 3D regular grid that is trained to reconstruct the VLM embeddings (e.g., DINOv3).</p>
+              <img class="how-it-works-img" src="./static/images/mapping.png" alt="Latent Mapping" style="width: 50%; max-width: 50%;">
+            </div>
+            <div style="margin-bottom: 2rem;">
+              <p class="content is-medium" style="margin-bottom: 0.75rem; text-align: left;"><strong>Map-conditioned Policy.</strong> We aggregate spatially distributed map features into a compact global token using a 3D feature aggregator and use it as an additional state input to policy networks.</p>
+              <img class="how-it-works-img" src="./static/images/map_token.png" alt="Map-conditioned Policy" style="width: 50%; max-width: 50%;">
             </div>
           </div>
         </div>
@@ -299,15 +323,21 @@
     </div>
   </section>
 
-  <section class="section" id="BibTeX">
-    <div class="container content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{kim2025seeingbiggerpicture3d,
+  <section class="hero is-small" id="BibTeX">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths-desktop is-four-fifths-tablet">
+        <div class="container">
+          <h2 class="title is-4 is-size-5-mobile">BibTeX</h2>
+          <pre style="text-align: left;"><code>@article{kim2025seeingbiggerpicture3d,
   title={Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy Learning},
   author={Kim, Sunghwan and Chung, Woojeh and Dai, Zhirui and Bhatt, Dwait and Shukla, Arth and Su, Hao and Tian, Yulun and Atanasov, Nikolay},
   journal={arXiv preprint arXiv:2510.03885},
   year={2025}
 }</code></pre>
+        </div>
+        </div>
+      </div>
     </div>
   </section>
 
