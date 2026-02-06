@@ -71,7 +71,7 @@ body {
 }
 
 .publication-authors a {
-   color: #ac8649 !important;
+   color: hsl(204, 86%, 53%) !important;
 }
 
 .publication-authors a:hover {
@@ -157,4 +157,33 @@ body {
   display: block;
   margin: auto;
   text-align:center;
+}
+
+.video-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  .hero-body {
+    padding: 1.5rem 1rem;
+  }
+
+  .author-block {
+    margin-bottom: 0.25rem;
+  }
+
+  .publication-links .button {
+    font-size: 0.85rem;
+  }
+
+  pre {
+    overflow-x: auto;
+    font-size: 0.75rem;
+  }
+
+  .video-container {
+    margin: 10px 0;
+  }
 }
